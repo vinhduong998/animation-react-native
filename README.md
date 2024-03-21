@@ -23,3 +23,8 @@ This is a new [**React Native**](https://reactnative.dev) project, build with [*
 <video width="240" height="320" controls>
   <source src="./src/component/scrolldot/scroll.mp4" type="video/mp4">
 </video>
+
+### Slide
+<video width="240" height="320" controls>
+  <source src="./src/component/slide/slide.mp4" type="video/mp4">
+</video>
