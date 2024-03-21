@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Marquee from './component/marquee/marquee';
-import Slide from './component/ballon-slider';
+import AppleStock from './component/apple-stock/apple-stock';
 
 const MainSrc = () => {
   return (
     <View style={styles.container}>
-      <Slide />
+      <AppleStock />
     </View>
   )
 }

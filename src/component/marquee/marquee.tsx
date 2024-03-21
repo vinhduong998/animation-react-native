@@ -81,9 +81,6 @@ const Marquee = ({ speed = 1, children, spacing = 0, style }: MarqueeProps) => {
     []
   );
 
-  console.log("cloneTimes", cloneTimes);
-
-
   return (
     <Animated.View
       style={style}

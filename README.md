@@ -28,3 +28,8 @@ This is a new [**React Native**](https://reactnative.dev) project, build with [*
 <video width="240" height="320" controls>
   <source src="./src/component/slide/slide.mp4" type="video/mp4">
 </video>
+
+### Apple Stock
+<video width="240" height="320" controls>
+  <source src="./src/component/apple-stock/apple-stock.mp4" type="video/mp4">
+</video>

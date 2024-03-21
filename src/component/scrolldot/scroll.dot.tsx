@@ -16,13 +16,15 @@ const ARRAY_IMAGE = [
   "https://cdn1.behapyglobal.com/lgbtapp.s3.ap-southeast-1.amazonaws.com/2024/01/23_1705996097437/6594e43a0d11b9762123e4ea-1705996097437-trong-tuan-moi-4-cung-hoang-dao-nay-se-rat-thuan-loi-trong-cong-viec-va-tinh-yeu-hot-girl-mac-trang-phuc-co-trang-4.jpg?w=2160&h=NaN&fit=crop&auto=format"
 ]
 
+const TRANSLATE_IMAGE = 150
+
 const { width, height } = Dimensions.get("window")
 
 const Item = ({ item, aniIndex, index }: { index: number, item: string, aniIndex: SharedValue<number> }) => {
   const styleImage = useAnimatedStyle(() => {
     return {
       transform: [{
-        translateX: interpolate(aniIndex.value, [index - 1, index, index + 1], [-50, 0, 50], Extrapolation.CLAMP)
+        translateX: interpolate(aniIndex.value, [index - 1, index, index + 1], [-TRANSLATE_IMAGE, 0, TRANSLATE_IMAGE], Extrapolation.CLAMP)
       }]
     }
   })
@@ -108,7 +110,7 @@ const styles = StyleSheet.create({
     elevation: 15
   },
   image: {
-    width: width - 20,
+    width: width - 120 + TRANSLATE_IMAGE * 2,
     height: (width - 120) / 3 * 4
   }
 })
